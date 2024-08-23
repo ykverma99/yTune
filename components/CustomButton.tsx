@@ -13,7 +13,7 @@ interface btnProps {
 
 const varients = {
   fill: "bg-primary",
-  ghost: "border-0 w-10",
+  ghost: "border-0 ",
   outline: "border-0.5 border-gray-300",
 };
 
@@ -29,7 +29,7 @@ const CustomButton = ({
   return (
     <TouchableOpacity
       onPress={onPress}
-      className={`h-11 w-[80%]  relative flex-row rounded-full justify-center items-center ${varients[varient]} ${styleContainer}`}
+      className={`h-11 w-full  relative flex-row rounded-full justify-center items-center ${varients[varient]} ${styleContainer}`}
     >
       {leftIcon ? <View className="absolute left-4 ">{leftIcon}</View> : null}
       <Text

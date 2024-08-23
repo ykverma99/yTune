@@ -1,3 +1,4 @@
+import SignupHeader from "@/components/SignupHeader";
 import { Stack } from "expo-router";
 
 export default function PageLayout() {
@@ -7,7 +8,10 @@ export default function PageLayout() {
       <Stack.Screen
         name="signup_1"
         options={{
-          headerShown: false,
+          // headerShown: false,
+          headerBackVisible: false,
+          headerStyle: { backgroundColor: "#1B1A1C" },
+          headerTitle: () => <SignupHeader />,
         }}
       />
     </Stack>

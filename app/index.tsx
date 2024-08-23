@@ -23,26 +23,28 @@ const start = () => {
           </Text>
         </View>
       </View>
-      <View className="w-full justify-center items-center space-y-4">
+      <View className="w-[80%] justify-center items-center space-y-4">
         <CustomButton
-          onPress={() => router.push("/pages/start")}
-          styleContainer="mt-4"
+          onPress={() => router.push("/pages/signup_1")}
+          styleContainer="mt-2"
           text="Sign up free"
         />
         <CustomButton
-          styleContainer="mt-4"
+          styleContainer="mt-2"
           varient="outline"
-          leftIcon={<AntDesign color={"white"} name="google" size={15} />}
+          leftIcon={<AntDesign color={"red"} name="google" size={15} />}
           text="Continue with Google"
         />
         <CustomButton
-          styleContainer="mt-4"
+          styleContainer="mt-2"
           varient="outline"
-          leftIcon={<MaterialIcons color={"white"} name="facebook" size={18} />}
+          leftIcon={
+            <MaterialIcons color={"#1877F2"} name="facebook" size={18} />
+          }
           text="Continue with Facebook"
         />
         <CustomButton
-          styleContainer="mt-4"
+          styleContainer="mt-2"
           varient="outline"
           leftIcon={<Foundation color={"white"} name="telephone" size={18} />}
           text="Continue with Mobile"
