@@ -10,6 +10,9 @@ module.exports = {
       fontSize: {
         xxs: "9px",
       },
+      fontWeight: {
+        bld: "900",
+      },
     },
   },
   plugins: [],

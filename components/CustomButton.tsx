@@ -29,11 +29,11 @@ const CustomButton = ({
   return (
     <TouchableOpacity
       onPress={onPress}
-      className={`h-11 w-full  relative flex-row rounded-full justify-center items-center ${varients[varient]} ${styleContainer}`}
+      className={`h-12 w-full  relative flex-row rounded-full justify-center items-center ${varients[varient]} ${styleContainer}`}
     >
       {leftIcon ? <View className="absolute left-4 ">{leftIcon}</View> : null}
       <Text
-        className={`font-bold tracking-wider ${
+        className={`font-bold tracking-wider  ${
           varient != "fill" ? "text-white" : "text-black"
         } ${styleText}`}
       >

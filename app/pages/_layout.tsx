@@ -14,6 +14,35 @@ export default function PageLayout() {
           headerTitle: () => <SignupHeader />,
         }}
       />
+      <Stack.Screen
+        name="signup_2"
+        options={{
+          // headerShown: false,
+          headerBackVisible: false,
+          headerStyle: { backgroundColor: "#1B1A1C" },
+          headerTitle: () => <SignupHeader />,
+        }}
+      />
+      <Stack.Screen
+        name="signup_name"
+        options={{
+          // headerShown: false,
+          headerBackVisible: false,
+          headerStyle: { backgroundColor: "#1B1A1C" },
+          headerTitle: () => <SignupHeader />,
+        }}
+      />
+      <Stack.Screen
+        name="artistPage"
+        options={{
+          // headerShown: false,
+          headerBackVisible: false,
+          headerStyle: { backgroundColor: "#1B1A1C" },
+          headerTitle: () => (
+            <SignupHeader title="Choose 3 or more artists you like." />
+          ),
+        }}
+      />
     </Stack>
   );
 }
