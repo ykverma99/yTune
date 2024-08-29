@@ -43,6 +43,12 @@ export default function PageLayout() {
           ),
         }}
       />
+      <Stack.Screen
+        name="login"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 }
