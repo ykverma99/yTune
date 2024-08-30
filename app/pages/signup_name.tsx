@@ -46,7 +46,7 @@ const signup_name = () => {
         <CustomButton
           text="Create an account"
           styleContainer="bg-white  w-44"
-          onPress={() => router.replace("/pages/artistPage")}
+          onPress={() => router.replace("/pages/artistSelect")}
         />
       </View>
     </View>

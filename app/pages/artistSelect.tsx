@@ -5,6 +5,7 @@ import images from "@/constants/images";
 import CustomButton from "@/components/CustomButton";
 import { LinearGradient } from "expo-linear-gradient";
 import AntDesign from "@expo/vector-icons/AntDesign";
+import { router } from "expo-router";
 
 const num = Array(25).fill("*");
 
@@ -46,7 +47,11 @@ const artistSelect = () => {
       />
       {artist.length > 2 ? (
         <View className="justify-center items-center absolute bottom-5 w-full">
-          <CustomButton text="Start" styleContainer="w-28" />
+          <CustomButton
+            onPress={() => router.replace("/(tabs)/home")}
+            text="Start"
+            styleContainer="w-28"
+          />
         </View>
       ) : null}
     </View>
