@@ -8,7 +8,7 @@ const SignUpInput = ({
 }: {
   pass?: boolean;
   title: string;
-  info: string;
+  info?: string;
 }) => {
   return (
     <View className="px-8 py-3">

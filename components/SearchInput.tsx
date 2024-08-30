@@ -22,7 +22,7 @@ const SearchInput = ({
       <Ionicons name="search-sharp" size={imgSize} color="black" />
       <TextInput
         placeholder={`${title ? title : "Search"}`}
-        className={`bg-white text-gray-500 h-full ${textSize}`}
+        className={`bg-white text-gray-500  flex-1 ${textSize}`}
       />
     </View>
   );

@@ -1,16 +1,10 @@
-import {
-  View,
-  Text,
-  Image,
-  FlatList,
-  ScrollView,
-  Pressable,
-} from "react-native";
+import { View, Text, Image, ScrollView, Pressable } from "react-native";
 import React, { useState } from "react";
 import SearchInput from "@/components/SearchInput";
 import images from "@/constants/images";
 import CustomButton from "@/components/CustomButton";
 import { LinearGradient } from "expo-linear-gradient";
+import AntDesign from "@expo/vector-icons/AntDesign";
 
 const num = Array(25).fill("*");
 
@@ -48,6 +42,7 @@ const artistSelect = () => {
         start={{ x: 0, y: 0.5 }}
         end={{ x: 0, y: 1 }}
         className="absolute h-full w-full"
+        pointerEvents="none"
       />
       {artist.length > 2 ? (
         <View className="justify-center items-center absolute bottom-5 w-full">
@@ -66,16 +61,18 @@ const ArtistAvtar = ({
   isSelected: boolean;
 }) => {
   return (
-    <Pressable
-      onPress={onPress}
-      className={`items-center gap-1 m-1.5 ${isSelected ? "bg-blue-500" : ""}`}
-    >
+    <Pressable onPress={onPress} className={`items-center gap-1 m-1.5`}>
       <View className="relative">
         <Image
           resizeMode="contain"
           source={images.LongHair}
           className="w-24 h-24 rounded-full"
         />
+        {isSelected ? (
+          <View className="absolute bottom-0 right-1">
+            <AntDesign name="checkcircle" size={20} color="#1ED760" />
+          </View>
+        ) : null}
       </View>
       <Text className="text-white font-semibold">Artist</Text>
     </Pressable>
