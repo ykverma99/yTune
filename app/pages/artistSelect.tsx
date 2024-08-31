@@ -45,7 +45,7 @@ const artistSelect = () => {
         className="absolute h-full w-full"
         pointerEvents="none"
       />
-      {artist.length > 2 ? (
+      {artist.length < 2 ? (
         <View className="justify-center items-center absolute bottom-5 w-full">
           <CustomButton
             onPress={() => router.replace("/(tabs)/home")}
