@@ -10,19 +10,21 @@ interface cardTypes {
 
 const CustomCard = ({ albumeName, singers, img, artist }: cardTypes) => {
   return (
-    <View>
-      <View>
+    <View className="space-y-2">
+      <View className="h-[152px] w-[152px]">
         <Image
           source={img}
           resizeMode="contain"
-          className={`h-full w-full ${artist ? "rounded-full" : "rounded-md"}`}
+          className={`h-full w-full ${artist ? "rounded-full" : "rounded-sm"}`}
         />
       </View>
       <View>
         <Text className={`text-white font-semibold ${artist && "text-center"}`}>
           {artist || albumeName}
         </Text>
-        {!artist ? <Text>{singers}</Text> : null}
+        {!artist ? (
+          <Text className="text-gray-500 text-xs">{singers}</Text>
+        ) : null}
       </View>
     </View>
   );
