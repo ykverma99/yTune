@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, Alert } from "react-native";
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
@@ -23,6 +23,7 @@ const SearchInput = ({
       <TextInput
         placeholder={`${title ? title : "Search"}`}
         className={`bg-white text-gray-500  flex-1 ${textSize}`}
+        onPress={() => Alert.alert("hello")}
       />
     </View>
   );
