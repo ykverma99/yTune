@@ -33,7 +33,7 @@ export default function PageLayout() {
         }}
       />
       <Stack.Screen
-        name="artistPage"
+        name="artistSelect"
         options={{
           // headerShown: false,
           headerBackVisible: false,
@@ -49,6 +49,7 @@ export default function PageLayout() {
           headerShown: false,
         }}
       />
+      <Stack.Screen name="search" options={{ headerShown: false }} />
     </Stack>
   );
 }

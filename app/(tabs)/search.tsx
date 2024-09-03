@@ -5,6 +5,7 @@ import Title from "@/components/Title";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import SearchInput from "@/components/SearchInput";
 import SearcBox from "@/components/SearcBox";
+import { router } from "expo-router";
 
 const search = () => {
   return (
@@ -18,6 +19,7 @@ const search = () => {
         {/* Text Input */}
         <View className="">
           <SearchInput
+            onPress={() => router.push("/pages/search")}
             styleContainer="py-2.5"
             title="Artists, songs or album"
             textSize="text-gray-800"
